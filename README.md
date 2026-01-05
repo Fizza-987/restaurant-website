@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites | Restaurant</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background:#f8f8f8;
+            color:#333;
+        }
+        header{
+            background:#d35400;
+            color:white;
+            padding:20px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        header h1{
+            font-size:28px;
+        }
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+            font-weight:bold;
+        }
+        nav a:hover{
+            text-decoration:underline;
+        }
+        .hero{
+            height:90vh;
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            color:white;
+        }
+        .hero h2{
+            font-size:48px;
+            margin-bottom:15px;
+        }
+        .hero p{
+            font-size:20px;
+            margin-bottom:25px;
+        }
+        .hero button{
+            padding:12px 30px;
+            font-size:18px;
+            border:none;
+            background:#e67e22;
+            color:white;
+            cursor:pointer;
+            border-radius:5px;
+        }
+        .hero button:hover{
+            background:#cf711f;
+        }
+        section{
+            padding:60px 40px;
+        }
+        .section-title{
+            text-align:center;
+            margin-bottom:40px;
+        }
+        .section-title h2{
+            font-size:36px;
+            color:#d35400;
+        }
+        .menu{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+            gap:25px;
+        }
+        .menu-item{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            text-align:center;
+        }
+        .menu-item img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+            border-radius:10px;
+            margin-bottom:15px;
+        }
+        .menu-item h3{
+            margin-bottom:10px;
+        }
+        .menu-item span{
+            color:#e67e22;
+            font-weight:bold;
+            font-size:18px;
+        }
+        .about{
+            background:white;
+            text-align:center;
+        }
+        .about p{
+            max-width:800px;
+            margin:0 auto;
+            font-size:18px;
+            line-height:1.6;
+        }
+        .contact{
+            background:#2c3e50;
+            color:white;
+        }
+        .contact form{
+            max-width:500px;
+            margin:0 auto;
+            display:flex;
+            flex-direction:column;
+        }
+        .contact input, .contact textarea{
+            padding:12px;
+            margin-bottom:15px;
+            border:none;
+            border-radius:5px;
+        }
+        .contact button{
+            padding:12px;
+            background:#e67e22;
+            color:white;
+            border:none;
+            font-size:18px;
+            cursor:pointer;
+            border-radius:5px;
+        }
+        footer{
+            background:#1a252f;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Delicious Bites</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h2>Fresh & Tasty Food</h2>
+        <p>Experience the best flavors in town</p>
+        <button>Order Now</button>
+    </div>
+</div>
+
+<section id="menu">
+    <div class="section-title">
+        <h2>Our Menu</h2>
+    </div>
+    <div class="menu">
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1606755962773-d324e9a13086" alt="Burger">
+            <h3>Classic Burger</h3>
+            <span>$8.99</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="Pizza">
+            <h3>Cheese Pizza</h3>
+            <span>$10.99</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1" alt="Pasta">
+            <h3>Creamy Pasta</h3>
+            <span>$9.99</span>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="section-title">
+        <h2>About Us</h2>
+    </div>
+    <p>
+        Delicious Bites is a modern restaurant serving high-quality food made with fresh ingredients. 
+        Our mission is to bring joy to your table with every bite.
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <div class="section-title">
+        <h2>Contact Us</h2>
+    </div>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Delicious Bites. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
